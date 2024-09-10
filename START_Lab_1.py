@@ -5,6 +5,8 @@ def lab1Question1(input_gb):
     # The solution to this goes here (and in all of them below...)
     # Set the variable num_bytes to the answer and return it
 
+    num_bytes = input_gb * 1024 * 1024
+
     return num_bytes
 
 def lab1Question2(name):
