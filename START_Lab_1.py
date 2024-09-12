@@ -4,9 +4,8 @@ def lab1Question1(input_gb):
     # Do the work here
     # The solution to this goes here (and in all of them below...)
     # Set the variable num_bytes to the answer and return it
-
-    num_bytes = input_gb * 1024 * 1024
-
+    # Bytes > Kilobytes > Megabytes > Gigabytes
+    num_bytes = input_gb * 1024 * 1024 * 1024
     return num_bytes
 
 def lab1Question2(name):
@@ -14,12 +13,24 @@ def lab1Question2(name):
     # Return None if the input is not a string
     is_odd = None
 
+    name = (Bryn)
+    # counter for number of characters
+    # determine if the count is odd or even
+    if len(name) % 2 == 0: #there is an even number of characters
+        print("The name has an even number of characters")
+    else:
+        print("the name has an odd number of characters")
+    # is odd = true, is even = false
+    # if input is not a string, return "none"
+
     return is_odd
 
 def lab1Question3(input_string, input_number):
     # Take in two inputs - a string and a number
     # Return the character of the string in the index given by number.  If this index does not exist, then return -1.
     character_at = -1
+
+    len(input_string) 
 
     return character_at
 
@@ -42,6 +53,14 @@ def lab1Question6(quarters, dimes, nickels, pennies):
     # Return the total amount in dollars
     # For example, if the handful contains 4 quarters, 3 dimes, 2 nickels, and 1 penny, the function should return 1.41.
     total = None
+
+    total = ((quarters * .25) + (dimes * .1) + (nickels * .05) + (pennies * .01))
+
+    print("# of quarters:", quarters)
+    print("# of dimes:", dimes)
+    print("# of nickels:", nickels)
+    print("# of pennies:", pennies)
+
     return total
 
 ## Example of calling a function to test these... 
