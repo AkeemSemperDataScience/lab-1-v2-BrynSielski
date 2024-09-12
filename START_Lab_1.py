@@ -8,38 +8,43 @@ def lab1Question1(input_gb):
     num_bytes = input_gb * 1024 * 1024 * 1024
     return num_bytes
 
+
 def lab1Question2(name):
     # Take an input of a name, return True if there is an odd number of characters in the name, False otherwise
     # Return None if the input is not a string
     is_odd = None
 
-    name = (Bryn)
-    # counter for number of characters
-    # determine if the count is odd or even
     if len(name) % 2 == 0: #there is an even number of characters
-        print("The name has an even number of characters")
+        is_odd = False
     else:
-        print("the name has an odd number of characters")
+        is_odd = True
     # is odd = true, is even = false
     # if input is not a string, return "none"
 
     return is_odd
 
+
 def lab1Question3(input_string, input_number):
     # Take in two inputs - a string and a number
     # Return the character of the string in the index given by number.  If this index does not exist, then return -1.
     character_at = -1
-
-    len(input_string) 
+    # need to take input_number's number and add 1 for correct spot since count starts at 0
+    character_at =  input_string[input_number - 1]
+    # take that number and take input string's character are corrosponding place
 
     return character_at
 
+
 def lab1Question4(file_name):
-    # Take an input of a file name. 
+    # Take an input of a file name.
+    
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
 
+    #place numbers into list_of_nums
+
     return list_of_nums
+
 
 def lab1Question5(list_numbers):
     # Take an input of a list of numbers
@@ -47,6 +52,7 @@ def lab1Question5(list_numbers):
     mode_of_list = None
 
     return mode_of_list
+
 
 def lab1Question6(quarters, dimes, nickels, pennies):
     # Take in 4 inputs - the number of quarters, dimes, nickels, and pennies in a handful
